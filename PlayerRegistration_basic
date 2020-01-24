@@ -1,0 +1,13 @@
+print('Player Registration Program')
+
+name= input('name of player:')
+surname= input('surname of player:')
+team= input('team of player:')
+
+informations= [name,surname,team]
+
+print("Recording.....")
+
+print("Name of player: {} \nSurname of player: {} \nTeam of player: {} ".format(informations[0],informations[1],informations[2]))
+
+print("Completed...............")
