@@ -1,0 +1,28 @@
+###Letter grade calculation
+
+midterm1=float(input('Please enter your midterm 1 score: '))
+midterm2=float(input('Please enter your midterm 2 score: '))
+final=float(input('Please enter your final score: '))
+
+total=(midterm1*0.3)+(midterm2*0.3)+(final*0.4)
+
+print(total)
+
+if total >= 90:
+    print('AA')
+elif total >= 85:
+    print('BA')
+elif total >= 80:
+    print('BB')
+elif total >= 75:
+    print('CB')
+elif total >= 70:
+    print('CC')
+elif total >= 65:
+    print('DC')
+elif total >= 60:
+    print('DD')
+elif total >= 55:
+    print('FD')
+elif total < 55:
+    print('FF')
