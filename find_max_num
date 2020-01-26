@@ -1,0 +1,14 @@
+### Finding maximum number
+
+x=float(input('Please enter first number: '))
+y=float(input('Please enter second number: '))
+z=float(input('Please enter third number: '))
+
+if x>y and x>z:
+    print(x, 'is te maximum')
+
+if y>x and y>z:
+    print(y, 'is te maximum')
+
+if z>x and z>y:
+    print(z, 'is te maximum')
