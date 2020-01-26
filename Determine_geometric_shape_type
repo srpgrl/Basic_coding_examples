@@ -1,0 +1,32 @@
+###Determining geometric shape type
+
+shape=input('Which type of shape do you want to find out? (triangle or  quadrilateral): ')
+
+if shape == "triangle":
+    a=float(input('Please enter the first length: '))
+    b = float(input('Please enter the second length: '))
+    c = float(input('Please enter the third length: '))
+
+    if abs(a+b)>c and abs(a+c)>b and abs(b+c)>a:
+        if a==b and b==c:
+            print('It is an equilateral triangle')
+        elif (a==b and b!=c) or (a==c and a!=b) or (b==c and b!=a):
+            print('It is an isosceles triangle')
+        elif a!=b and b!=c:
+            print('It is a scalene triangle')
+    else:
+        print('Does not specify a triangle.')
+
+elif shape=="quadrilateral":
+    print('Please enter the edges in order')
+    a = float(input('Please enter the first length: '))
+    b = float(input('Please enter the second length: '))
+    c = float(input('Please enter the third length: '))
+    d = float(input('Please enter the fourth length: '))
+
+    if a==b and b==c and c==d:
+        print('It is an square')
+    elif a==c and b==d:
+        print('It is a rectangle')
+    else:
+        print('It is a quadrilateral.')
